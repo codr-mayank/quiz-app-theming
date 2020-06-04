@@ -66,8 +66,7 @@ class _QuizAppState extends State<QuizApp> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       questionBank[_currentQuestionIndex].questionText,
-                      style:
-                          TextStyle(fontSize: 16.9, color: Colors.blueAccent),
+                      // style: TextStyle(fontSize: 16.9, color: Colors.blueAccent),
                     ),
                   )),
                 ),
