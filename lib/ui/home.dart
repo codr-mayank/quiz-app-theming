@@ -38,9 +38,10 @@ class _QuizAppState extends State<QuizApp> {
       appBar: AppBar(
         title: Text('GK Quiz'),
         centerTitle: true,
-        backgroundColor: Colors.lightBlue,
+        // backgroundColor: Colors.lightBlue,
       ),
-      backgroundColor: Colors.yellowAccent.shade100,
+      // backgroundColor: Colors.yellowAccent.shade100,
+
       // we use [Builder] here to use a [context] that is a descendent of [Scaffold]
       // or else [Scaffold.of] will return null
       body: Builder(
