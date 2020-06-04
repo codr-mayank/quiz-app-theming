@@ -11,7 +11,17 @@ ThemeData _buildAppTheme() {
       primaryColor: Colors.lightBlue,
       scaffoldBackgroundColor: Colors.amberAccent.shade100,
       backgroundColor: Colors.amber,
-      textTheme: TextTheme(body1: TextStyle(fontSize: 16, color: Colors.grey[900])));
+      textTheme: _appTextTheme(base.textTheme));
+}
+
+TextTheme _appTextTheme(TextTheme base) {
+  return base.copyWith(
+      headline: base.headline.copyWith(fontWeight: FontWeight.w500),
+      title: base.title.copyWith(fontSize: 18.0),
+      caption:
+          base.caption.copyWith(fontWeight: FontWeight.w400, fontSize: 14.0),
+      button: base.button.copyWith(letterSpacing: 3.0, fontSize: 14),
+      body1: base.body1.copyWith(fontSize: 16, color: Colors.grey[900]));
 }
 
 void main() {
