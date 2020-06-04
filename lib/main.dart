@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'ui/home.dart';
 
+final ThemeData _appTheme = _buildAppTheme();
+
+ThemeData _buildAppTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+      brightness: Brightness.dark,
+      accentColor: Colors.amber,
+      primaryColor: Colors.lightBlue,
+      scaffoldBackgroundColor: Colors.amberAccent.shade100,
+      backgroundColor: Colors.amber,
+      textTheme: TextTheme(body1: TextStyle(fontSize: 16, color: Colors.grey[900])));
+}
+
 void main() {
   return runApp(new MaterialApp(
-    theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.grey[800],
-        textTheme: TextTheme(
-            headline: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
-            body1: TextStyle(
-              fontSize: 16
-            ))),
+    theme: _appTheme,
     home: QuizApp(),
   ));
 }
