@@ -15,14 +15,20 @@ ThemeData _buildAppTheme() {
 }
 
 TextTheme _appTextTheme(TextTheme base) {
-  return base.copyWith(
-      headline: base.headline.copyWith(fontWeight: FontWeight.w500),
-      title: base.title.copyWith(fontSize: 18.0),
-      caption:
-          base.caption.copyWith(fontWeight: FontWeight.w400, fontSize: 14.0),
-      button: base.button.copyWith(letterSpacing: 3.0, fontSize: 14),
-      body1: base.body1.copyWith(
-          fontSize: 16, color: Colors.grey[900], fontFamily: 'Lobster_Two'));
+  return base
+      .copyWith(
+          headline: base.headline.copyWith(fontWeight: FontWeight.w500),
+          title: base.title.copyWith(fontSize: 18.0),
+          caption: base.caption
+              .copyWith(fontWeight: FontWeight.w400, fontSize: 14.0),
+          button: base.button.copyWith(letterSpacing: 3.0, fontSize: 14),
+          body1: base.body1.copyWith(
+              fontSize: 16, color: Colors.grey[900], fontFamily: 'Montserrat'))
+      .apply(
+        fontFamily: 'Montserrat',
+        displayColor: Colors.amber,
+        bodyColor: Colors.grey[900],
+      );
 }
 
 void main() {

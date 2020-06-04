@@ -66,6 +66,9 @@ flutter:
     - family: Lobster_Two
       fonts:
         - asset: fonts/LobsterTwo-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Regular.ttf
         
   # fonts:
   #   - family: Schyler
